@@ -10,10 +10,5 @@ install:
   - ./firebase_init.sh
 script:
 - set -o pipefail && xcodebuild -workspace TimeTracker.xcworkspace
-  -scheme TimeTracker -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6"
+  -scheme TimeTracker -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6,OS=10.0"
   GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES clean test
-- pod lib lint --quick
-notifications:
-#   slack:
-#     secure: VXPjydABzxvSHGDdPPkIdTGtgemahefi++aZM2bMU5/V81/EhjvEHL8XmqEv6g7D/BDULXhl17ylKJ9ilMemk+5GEy5qhTwENkqglGyK9jMQaO5/x4OYLxN/yCTZtGb/73OVUHZtPDg9m1J+gIkzsQF8m2ZVN916u/t4FVL6Vgg=
-# after_success: slather
