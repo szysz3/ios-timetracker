@@ -1,7 +1,7 @@
 osx_image: xcode8
 language: objective-c
 before_install:
-  - gem install cocoapods slather -N
+  - gem install cocoapods xcpretty slather -N
   - pod update Firebase
 podfile: Podfile
 env:
@@ -10,5 +10,5 @@ install:
   - ./firebase_init.sh
 script:
 - set -o pipefail && xcodebuild -workspace TimeTracker.xcworkspace
-  -scheme TimeTracker -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6,OS=10.0"
-  GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES clean test
+  -scheme TimeTracker -sdk iphonesimulator10.0 -destination "platform=iOS Simulator,name=iPhone 6,OS=10.0"
+  GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=YES GCC_GENERATE_TEST_COVERAGE_FILES=YES clean test | xcpretty
