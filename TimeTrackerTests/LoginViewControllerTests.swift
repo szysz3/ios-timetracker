@@ -23,7 +23,7 @@ class LoginViewControllerTests: XCTestCase {
     let expectedBtnTitle = "OK"
     let mockedString = "fake"
     
-    let requestTimeoutSec: TimeInterval = 5
+    let requestTimeoutSec: TimeInterval = 20
     
     //MARK: Setup
     

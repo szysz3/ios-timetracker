@@ -22,7 +22,7 @@ class TaskListViewControllerTest: XCTestCase {
     let expectedMessage = "Something went wrong."
     let expectedTitle = "Oops!"
     let expectedBtnTitle = "OK"
-    let requestTimeout: TimeInterval = 5
+    let requestTimeout: TimeInterval = 20
     
     //MARK: Setup
     

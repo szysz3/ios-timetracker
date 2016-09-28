@@ -28,7 +28,7 @@ class SplashViewControllerTests: XCTestCase {
         navigationController = storyboard.instantiateInitialViewController() as! UINavigationController
         viewController = navigationController.topViewController as! SplashViewController
         
-        navigationDelay = viewController.delay + 5
+        navigationDelay = viewController.delay + 20
     }
     
     //MARK: Tests

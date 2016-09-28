@@ -25,7 +25,7 @@ class SignUpViewControllerTest: XCTestCase {
     let mockedText = "fake"
     
     var navigationControler: UINavigationController!
-    let requestTimeoutSec: TimeInterval = 5
+    let requestTimeoutSec: TimeInterval = 20
     var textFields:[UITextField] = []
     
     //MARK: Setup
