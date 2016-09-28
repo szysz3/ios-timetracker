@@ -7,6 +7,6 @@ Project created for educational purposes.
 
 #### master branch status:
 
-![travis](https://travis-ci.org/szysz3/ios-timetracker.svg?branch=master)
+[![Build Status](https://travis-ci.org/szysz3/ios-timetracker.svg?branch=master)](https://travis-ci.org/szysz3/ios-timetracker)
 
 
