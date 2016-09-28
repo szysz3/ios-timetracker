@@ -11,3 +11,6 @@ install:
 script:
 - set -o pipefail && xcodebuild -verbose -workspace TimeTracker.xcworkspace -scheme TimeTracker -sdk iphonesimulator10.0 -destination "platform=iOS Simulator,name=iPhone 6,OS=10.0" clean test | xcpretty -c
 after_failure:
+  - echo $TRAVIS_TEST_RESULT
+  - cd $TRAVIS_TEST_RESULT
+  - ls -la
