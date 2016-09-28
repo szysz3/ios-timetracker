@@ -37,8 +37,8 @@
 		E77CAEEA1D901EF7000F39BF /* FIRServiceMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77CAEE91D901EF7000F39BF /* FIRServiceMock.swift */; };
 		E77F26491D916DEB001073E9 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77F26481D916DEB001073E9 /* AddTaskViewController.swift */; };
 		E785B5051D96A702003E6F87 /* TaskServiceDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E785B5041D96A702003E6F87 /* TaskServiceDelegate.swift */; };
-		E796FC231D9BAEF400644E0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E796FC221D9BAEF400644E0F /* GoogleService-Info.plist */; };
-		E796FC241D9BAF0100644E0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E796FC221D9BAEF400644E0F /* GoogleService-Info.plist */; };
+		E796FC271D9BDA4D00644E0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E796FC261D9BDA4D00644E0F /* GoogleService-Info.plist */; };
+		E796FC281D9BDA4D00644E0F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E796FC261D9BDA4D00644E0F /* GoogleService-Info.plist */; };
 		E7C32BC91D9ABD9100C22EE6 /* FIRConsts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C32BC81D9ABD9100C22EE6 /* FIRConsts.swift */; };
 		E7C352A81D903CA800E111B1 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7C352A71D903CA800E111B1 /* LoginViewControllerTests.swift */; };
 		E7CEF44D1D8FC8F100A5846F /* SplashViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7CEF44C1D8FC8F100A5846F /* SplashViewControllerTests.swift */; };
@@ -100,7 +100,7 @@
 		E77CAEE91D901EF7000F39BF /* FIRServiceMock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRServiceMock.swift; sourceTree = "<group>"; };
 		E77F26481D916DEB001073E9 /* AddTaskViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
 		E785B5041D96A702003E6F87 /* TaskServiceDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskServiceDelegate.swift; sourceTree = "<group>"; };
-		E796FC221D9BAEF400644E0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E796FC261D9BDA4D00644E0F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E7C32BC81D9ABD9100C22EE6 /* FIRConsts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FIRConsts.swift; sourceTree = "<group>"; };
 		E7C352A71D903CA800E111B1 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		E7CEF44C1D8FC8F100A5846F /* SplashViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashViewControllerTests.swift; sourceTree = "<group>"; };
@@ -324,6 +324,15 @@
 			name = AddTaskViewController;
 			sourceTree = "<group>";
 		};
+		E796FC251D9BDA3100644E0F /* SupportFiles */ = {
+			isa = PBXGroup;
+			children = (
+				E796FC261D9BDA4D00644E0F /* GoogleService-Info.plist */,
+				E7469CBF1D926EF100FDF686 /* TaskColors.plist */,
+			);
+			name = SupportFiles;
+			sourceTree = "<group>";
+		};
 		E7C352A61D903C8D00E111B1 /* LoginViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -365,6 +374,7 @@
 		E7EAD2241D8EAFD700599D88 /* TimeTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E796FC251D9BDA3100644E0F /* SupportFiles */,
 				E71B1AA61D99550B004423DE /* Utils */,
 				E700FAEB1D93C8C900D5718A /* TimeTracker.entitlements */,
 				E7469CBA1D92674500FDF686 /* Views */,
@@ -376,8 +386,6 @@
 				E7EAD22B1D8EAFD700599D88 /* Main.storyboard */,
 				E7EAD22E1D8EAFD700599D88 /* Assets.xcassets */,
 				E7EAD2331D8EAFD700599D88 /* Info.plist */,
-				E796FC221D9BAEF400644E0F /* GoogleService-Info.plist */,
-				E7469CBF1D926EF100FDF686 /* TaskColors.plist */,
 				E77CAED41D8FCD83000F39BF /* LaunchScreen.storyboard */,
 			);
 			path = TimeTracker;
@@ -527,7 +535,7 @@
 				E7EAD22D1D8EAFD700599D88 /* Main.storyboard in Resources */,
 				E7469CD01D92B0B600FDF686 /* TaskCell.xib in Resources */,
 				E7469CC01D926EF100FDF686 /* TaskColors.plist in Resources */,
-				E796FC231D9BAEF400644E0F /* GoogleService-Info.plist in Resources */,
+				E796FC271D9BDA4D00644E0F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,7 +544,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7469CC21D926EFE00FDF686 /* TaskColors.plist in Resources */,
-				E796FC241D9BAF0100644E0F /* GoogleService-Info.plist in Resources */,
+				E796FC281D9BDA4D00644E0F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

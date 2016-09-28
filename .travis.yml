@@ -2,10 +2,12 @@ osx_image: xcode8
 language: objective-c
 before_install:
   - gem install cocoapods slather -N
-  - pod update
+  - pod update Firebase
 podfile: Podfile
 env:
 - LC_CTYPE=en_US.UTF-8 LANG=en_US.UTF-8
+install:
+  - ./firebase_init.sh
 script:
 - set -o pipefail && xcodebuild -workspace TimeTracker.xcworkspace
   -scheme TimeTracker -sdk iphonesimulator -destination "platform=iOS Simulator,name=iPhone 6"
