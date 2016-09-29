@@ -9,7 +9,7 @@ env:
 install:
   - ./firebase_init.sh
 script:
-- set -o pipefail && xcodebuild -verbose -workspace TimeTracker.xcworkspace -scheme TimeTracker -sdk iphonesimulator10.0 -destination "platform=iOS Simulator,name=iPhone SE,OS=10.0" clean test | xcpretty -c
+- set -o pipefail && xcodebuild -verbose -workspace TimeTracker.xcworkspace -scheme TimeTracker -sdk iphonesimulator10.0 -destination "platform=iOS Simulator,name=iPhone SE,OS=10.0" clean build | xcpretty -c
 after_failure:
 - cd /Users/travis/Library/Developer/Xcode/DerivedData/TimeTracker-cneikppdhkhndwaknezvcjttknhe/Logs/Test/
 - find . -name *.log -print -exec cat {} \;
